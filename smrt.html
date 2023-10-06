@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RPS Game</title>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>RPS Game</h1>
+    <div class="choicemain">
+        <button class="rock" value="ROCK" onclick="choice1()">Rock</button>
+        <button class="paper"  value="PAPER" onclick="choice2()">Paper</button>
+        <button class="scis" value="SCISSORS" onclick="choice3()">Scissors</button>
+    </div>
+
+    <button id="playButton" class="playbut" onclick="play()">Play</button>
+    <button class="connect-button" onclick="connectToMetaMask()">Connect to MetaMask</button>
+
+    <div class="bet-form">
+        <label for="bet">Enter value:</label>
+        <input type="text" id="bet" name="bet" placeholder="0tBNB">
+        <button onclick="bet()">BET</button>
+        <div class="win">
+            <div class="wintext"> WIN </div>
+        </div>
+        <div class="lose">
+            <div class="wintext"> LOSE </div>
+        </div>
+    </div>
+</body>
+</html>

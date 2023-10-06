@@ -1,0 +1,103 @@
+h1{
+ font-family: 'Dela Gothic One', cursive;
+ font-size: 40px;
+ position: absolute;
+ left: 640px;
+ top: 20px;
+}
+.rock, .paper, .scis, .playbut{
+  position: relative;
+  background-color: #337CCF;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: 'Dela Gothic One', cursive;
+  border-radius: 7px;
+}
+.rock:hover, .paper:hover, .scis:hover{
+  background-color:#1450A3;
+}
+.rock.clicked, .paper.clicked, .scis.clicked {
+  background-color: #191D88;
+}
+
+.choicemain{
+
+ position: absolute;
+ width: 650px;
+ top: 200px;
+ transform: translate(70%);
+ height: 80px;
+}
+
+.playbut{
+  background-color: #614BC3;
+  top: 300px;
+  left: 660px;
+}
+
+.playbut:active{
+  background-color: #313866;
+  transition: all 0.2s ;
+}
+.bet-form {
+  width: 300px;
+  margin-right: 20px;
+  font-family: 'Dela Gothic One', sans-serif;
+  margin-top: 150px;
+}
+
+.bet-form label {
+  margin-bottom: 5px;
+}
+
+.bet-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.bet-form button {
+  padding: 10px 20px;
+  background-color: #1450A3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.bet-form button:hover {
+  background-color: #191D88;
+}
+
+.win, .lose{
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 220px;
+  left: 570px;
+  background-color: #00DFA2;
+  color: #fff;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 70px;
+  z-index: 1;
+  border-radius: 10px;
+  display: none;
+  animation: showWin 2s;
+}
+.win.show, .lose.show{
+  display: block;
+}
+.wintext{
+  text-align: center;
+  padding: 41px;
+}
+.lose{
+  background-color: #CD1818;
+}
+
